@@ -7,12 +7,16 @@
 # nuitka-project-else:
 #    nuitka-project: --mode=standalone
 
+# nuitka-project: --include-package=ipsw_parser
+
 # nuitka-project-if: {OS} == "Windows":
 #    nuitka-project: --output-filename=SideJITServer-windows-x86_64.exe
 #    nuitka-project: --include-module=jinxed.terminfo.vtwin10
 #    nuitka-project: --include-module=jinxed.terminfo.ansicon
 #    nuitka-project: --include-module=jinxed.terminfo.xterm
 #    nuitka-project: --include-module=jinxed.terminfo.xterm_256color
+#    nuitka-project: --include-module=win32security
+#    nuitka-project: --include-module=pywintypes
 #    nuitka-project: --user-package-configuration-file=sidejitserver-nuitka-package.config.yml
 # nuitka-project-if: {OS} == "Linux":
 #    nuitka-project: --output-filename=SideJITServer-linux-x86_64.bin
